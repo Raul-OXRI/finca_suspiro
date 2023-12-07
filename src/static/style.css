@@ -1,0 +1,8 @@
+.imagen{
+    background-image: url(../pictures/encabezado.jpg);
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
