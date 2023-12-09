@@ -1,5 +1,5 @@
 .imagen{
-    background-image: url(../pictures/encabezado.jpg);
+    background-image: url(../static/pictures/encabezado.jpg);
     height: 600px;
     position: relative;
     background-size: cover;
