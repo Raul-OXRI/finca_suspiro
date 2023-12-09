@@ -1,0 +1,18 @@
+{% extends "menu.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section>
+    <div class="container m-4" style ="display: flex; justify-content:flex-end">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="btn btn-outline-secondary" href="{% url 'inicio' %}"> Regresar <i class="bi bi-arrow-return-left"></i> </a>
+        </div>
+      </div>
+    </div>  
+</section>
+
+{% endblock %}
