@@ -4,8 +4,7 @@ from .choices import GENERO
 # Create your models here.
 
 
-
-class registro(models.Model):
+class Registro(models.Model):
     # ********* DATOS DEL REGISTRO DE VACAS *********
     no_animal = models.IntegerField(blank=False)
     codigo = models.IntegerField(blank=False)

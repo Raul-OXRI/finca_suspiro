@@ -5,7 +5,6 @@
 {% block content %}
 
 
-
 <section>
   <div class="container m-4" style ="display: flex; justify-content:flex-end">
     <div class="row">
@@ -24,30 +23,24 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Registro</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Propietario</th>
+            <th scope="col">Nacimineto</th>
+            <th scope="col">Genero</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {% for registro in registros %}
+                <tr>
+                    <td>{{ registro.no_animal }}</td>
+                    <td>{{ registro.codigo }}</td>
+                    <td>{{ registro.fecha_nacimiento }}</td>
+                    <td>{{ registro.genero }}</td>
+                    
+                    <!-- ... (resto de los campos) -->
+                </tr>
+            {% endfor %}
         </tbody>
       </table>
     </div>

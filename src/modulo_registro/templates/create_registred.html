@@ -15,4 +15,13 @@
     </div>  
 </section>
 
+<h1>Formulario de Registro de Vacas</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!-- Esto renderizará cada campo del formulario en un párrafo -->
+    <input type="submit" value="Guardar">
+</form>
+
 {% endblock %}
