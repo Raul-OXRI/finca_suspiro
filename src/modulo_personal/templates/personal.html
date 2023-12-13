@@ -1,0 +1,21 @@
+{% extends "menu.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section>
+  <div class="container m-4" style ="display: flex; justify-content:flex-end">
+    <div class="row">
+      <div class="col-md-12">
+        <a class="btn btn-success" href="{% url 'create_user' %}"> Agregar personal <i class="bi bi-clipboard-plus-fill"></i> </a>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+
+
+{% endblock %}

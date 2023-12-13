@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'modulo_dashboard',
     'modulo_personal',
     'modulo_registro',
+    # se agrego la libreria de crispy 
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +139,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# la instancia para el crispy form
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
