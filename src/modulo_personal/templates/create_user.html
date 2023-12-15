@@ -26,9 +26,9 @@
         <h1 class="text-center">Crear Usuario</h1>
         <form method="post">
           {% csrf_token %}
-          {% crispy form %}
-          <button type="submit" class="btn btn-primary">Crear Usuario</button>
-        </form>
+          {{ form|crispy }}
+          <button type="submit">Crear Usuario</button>
+          </form>
       </div>
     </div>
   </div>  

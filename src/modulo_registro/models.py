@@ -1,5 +1,6 @@
 from django.db import models
 from .choices import GENERO
+from django.contrib.auth.models import User, Group
 
 # Create your models here.
 
@@ -14,4 +15,4 @@ class Registro(models.Model):
     partos = models.IntegerField(blank=False)
     desendencia = models.IntegerField(blank=False)
     observaciones = models.TextField(blank=True)
-    
+    usuario = models.ManyToManyField(User, verbose_name='Usuarios')
