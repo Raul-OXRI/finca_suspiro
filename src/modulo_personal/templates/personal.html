@@ -16,6 +16,38 @@
 </section>
 
 
-
+<div class="container m-4">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">No. Personal</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Puesto</th>
+            <th scope="col">Opcione</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.first_name }}</td>
+              <td>{{ user.last_name }}</td>
+              <td>
+                  {% if user.groups.exists %}
+                      {{ user.groups.first.name }}
+                  {% else %}
+                      Sin grupo
+                  {% endif %}
+              </td>
+          </tr>
+          {% endfor %}
+      </tbody>
+      </table>
+    </div>
+  </div>
+</div>  
 
 {% endblock %}
